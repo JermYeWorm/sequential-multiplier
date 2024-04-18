@@ -11,7 +11,7 @@ module Mult_Data_Path(
     input wire ld_shift_b,      // Shift b MUX select
     input wire en_p,            // Register p enable
     input wire ld_add_p,        // Add a MUX select
-    output reg [3:0] p_out,     // 4-bit output vector for product output
+    output reg [7:0] p_out,     // 4-bit output vector for product output
     output reg zero,            // Flag for b, zero = 1 if b = 0
     output reg lsb_b            // Flag for the LSB of b, lsb_b = 1 if b[0] = 1
     );
