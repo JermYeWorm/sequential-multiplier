@@ -1,4 +1,4 @@
-module shift_register #(parameter N = 4)(
+module register #(parameter N = 4)(
     input wire en,        // Enable
     input wire clk,
     input wire clr,
@@ -11,6 +11,6 @@ module shift_register #(parameter N = 4)(
         if (clr == 1)
             q <= 0;
         else if (en == 1)
-            q = q << 1;
+            q <= d;
     end
 endmodule

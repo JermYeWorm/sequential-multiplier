@@ -6,15 +6,18 @@ module Seq_Mult(
     input go,
     input [3:0] a,
     input [3:0] b,
-    output [7:0] p
+    output [7:0] p,
+    output en_a, ld_shift_a,
+         en_b, ld_shift_b,
+         en_p, ld_add_p, zero, lsb_b
 );
     
-    // wires going from Data Path to Controller
-    wire zero, lsb_b;
-    // wires going from Controller to Data Path
-    wire en_a, ld_shift_a,
-         en_b, ld_shift_b,
-         en_p, ld_add_p;
+//    // wires going from Data Path to Controller
+//    wire zero, lsb_b;
+//    // wires going from Controller to Data Path
+//    wire en_a, ld_shift_a,
+//         en_b, ld_shift_b,
+//         en_p, ld_add_p;
     
     
     Seq_Mult_Controller controller (.clk(clk),
