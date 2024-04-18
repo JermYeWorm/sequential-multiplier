@@ -27,7 +27,7 @@ module Seq_Mult(
                                     .en_p(en_p),
                                     .ld_shift_a(ld_shift_a),
                                     .ld_shift_b(ld_shift_b),
-                                    .ld_add_p(ld.add_p)
+                                    .ld_add_p(ld_add_p)
                                     );
                                    
     Mult_Data_Path data_path (.clk(clk),
