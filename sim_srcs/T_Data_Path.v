@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module T_Data_Path;
-    reg [3:0] a_in;     // Multiplicand input
+    reg [3:0] a_in;      // Multiplicand input
     reg [3:0] b_in;      // Multiplier input
     reg clk;             // System clock
     reg clr;             // Reset signal
@@ -11,9 +11,9 @@ module T_Data_Path;
     reg ld_shift_b;      // Shift b MUX select
     reg en_p;            // Register p enable
     reg ld_add_p;        // Add a MUX select
-    wire [7:0] p_out;     // 4-bit output vector for product output
-    wire zero;            // Flag for b, zero = 1 if b = 0
-    wire lsb_b;            // Flag for the LSB of b, lsb_b = 1 if b[0] = 1
+    wire [7:0] p_out;    // 4-bit output vector for product output
+    wire zero;           // Flag for b, zero = 1 if b = 0
+    wire lsb_b;          // Flag for the LSB of b, lsb_b = 1 if b[0] = 1
     
     wire [7:0] a_d, a_q, p_d, p_q;
     wire [3:0] b_q;
