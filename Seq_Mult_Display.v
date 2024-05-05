@@ -20,12 +20,12 @@ module Seq_Mult_Display(
                          .p(p));
     
     Display display (.clk(clk),
-                    .clr(clr),
-                    .dig1(a),
-                    .dig2(b),
-                    .dig3(p[7:4]),
-                    .dig4(p[3:0]),
-                    .an(an),
-                    .ca(ca));
+                     .clr(clr),
+                     .dig1(a),
+                     .dig2(b),
+                     .dig3(p[7:4]),
+                     .dig4(p[3:0]),
+                     .an(an),
+                     .ca(ca));
     
 endmodule
