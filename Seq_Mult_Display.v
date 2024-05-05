@@ -19,7 +19,7 @@ module Seq_Mult_Display(
                          .b(b),
                          .p(p));
     
-    Display diplay (.clk(clk),
+    Display display (.clk(clk),
                     .clr(clr),
                     .dig1(a),
                     .dig2(b),
