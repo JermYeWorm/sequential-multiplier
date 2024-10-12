@@ -31,9 +31,15 @@
 
 ## Implementation
 The multiplier was implemented on a Basys 3 Artix-7 FPGA board. The multiplier and multiplicand are the two digits on the left while the resulting product is shown on the right in hexadecimal. The multiplier and multiplicand are controlled by two sets of 4 switches on the far bottom right of the board.
+<br>
 ![image](https://github.com/user-attachments/assets/e697aecc-9cc7-43f9-8366-23ef78bd1c67)
 ![image](https://github.com/user-attachments/assets/55aee893-9d67-4196-8bf8-e2bbd1b657ee)
 ![image](https://github.com/user-attachments/assets/b42442ed-a6a9-4ba7-8761-893c27e7b61c)
 ![image](https://github.com/user-attachments/assets/6e019a42-ae68-4188-911e-b41cf847faff)
+
+# Delay
+The worst case delay was measured on a DLA (Digital Logic Analyzer) and shown below to be 192 nanoseconds.
+<br>
+![image](https://github.com/user-attachments/assets/5224db4e-ea7f-4bd2-b48f-ee679d2c2b81)
 
 
